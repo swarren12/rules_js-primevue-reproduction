@@ -1,0 +1,8 @@
+#
+# .bazelignore - Ignored directories
+#
+
+.idea
+out
+node_modules
+example/node_modules

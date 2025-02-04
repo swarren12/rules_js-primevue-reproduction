@@ -1,0 +1,25 @@
+#
+# BUILD.bazel - example
+#
+
+load("//:bazel/modules.bzl", "vite_app")
+
+vite_app(
+    name = "example",
+    srcs = glob([
+       "index.html",
+       "package.json",
+       "vite.config.mjs",
+       "src/**",
+    ]),
+    deps = [
+        "@primevue/themes",
+        "primevue",
+        "vue",
+    ],
+    dev_deps = [
+        "@vitejs/plugin-vue",
+        "vite",
+        "vite-plugin-vue-devtools",
+    ],
+)

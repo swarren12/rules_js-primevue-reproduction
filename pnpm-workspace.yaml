@@ -1,0 +1,6 @@
+#
+# pnpm-workspace.yaml - Global pnpm configuration
+#
+
+packages:
+  - 'example'
